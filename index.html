@@ -1,34 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel = "stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <section>
-        <h1 class="game-title">Tic Tac Toe</h1>
-        <h2 class="game-status"></h2>
-        <button class="game-restart">Restart Game</button>
-        <div class="game-container">
-            <div data-cell-index="0" class="cell"></div>
-            <div data-cell-index="1" class="cell"></div>
-            <div data-cell-index="2" class="cell"></div>
-            <div data-cell-index="3" class="cell"></div>
-            <div data-cell-index="4" class="cell"></div>
-            <div data-cell-index="5" class="cell"></div>
-            <div data-cell-index="6" class="cell"></div>
-            <div data-cell-index="7" class="cell"></div>
-            <div data-cell-index="8" class="cell"></div>
-        </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Game-TicTacToe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    </section>
-<script src="src/index.js"></script>
-</body>
-</html>
+        <link rel="icon" href="favicon.ico">
+        <link rel = "stylesheet" type="text/css" href="styles.css">
+   
+    </head>
+    <body>
+        <section class="game-container">
+            <div class = "heading" > 
+                <h1>Tic-Tac-Toe </h1>
+            </div>
+            <div class = "status-action">
+                <div class = "status1"> Player1 : ' X '</br> Player2 : ' O '  </div>
+                <div id = "status2"> Let's Play </div>
+                <div id = "restart"  onclick = "restart()"> Restart </div>
+                <script src= "src/index.js"></script>
+            </div>
+            <div class = "game-canvas">
+                
+                    <div id = "game-cell0" onclick = "fill('0')"></div>
+                    <div id = "game-cell1" onclick = "fill('1')"></div>
+                    <div id = "game-cell2" onclick = "fill('2')"></div>
+                    <div id = "game-cell3" onclick = "fill('3')"></div>
+                    <div id = "game-cell4" onclick = "fill('4')"></div>
+                    <div id = "game-cell5" onclick = "fill('5')"></div>
+                    <div id = "game-cell6" onclick = "fill('6')"></div>
+                    <div id = "game-cell7" onclick = "fill('7')"></div>
+                    <div id = "game-cell8" onclick = "fill('8')"></div>
+                    <script src= "src/index.js"></script>
+            </div>
 
+            
+
+        </section>
+
+    </body>
+
+</html>
 
 
 
