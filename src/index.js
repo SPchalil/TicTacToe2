@@ -228,7 +228,7 @@ function tie(){
 
 /*---
 /* checking for a draw'*/
-   function tie() {
+/*   function tie() {
     for (var i = 0; i < size*size; i++) {
       // console.log(board[i]);
       row = math.floor(i/3);
@@ -241,4 +241,4 @@ function tie(){
       }
     }
     
-  } 
+  } */
