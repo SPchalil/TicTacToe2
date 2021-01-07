@@ -1,17 +1,20 @@
 // Create one dimensional array 
-var board = new Array(3); 
+//var board = new Array(3); 
  
 // Loop to create 2D array using 1D array 
-for (var i = 0; i < board.length; i++) { 
-    board[i] = new Array(3); 
-} 
+//for (var i = 0; i < board.length; i++) { 
+//    board[i] = new Array(3); 
+//} 
 
-/*let board = [
+let board = [
     [" ", " ", " "],
     [" ", " ", " "],
     [" ", " ", " "]
- ];*/
+ ];
 
+ 
+
+/*
 let currentPlayer = 'X';
 let display = document.getElementById('status2');
 const size = 3;
@@ -21,7 +24,10 @@ function fill(index){
     const col = index % size;
     board[row][col] = document.getElementById('game-cell'+index); 
     //console.log (board[row][col]) ;
+    console.log(row);
+    console.log(col);
     if (board[row][col].innerHTML == "") {
+        
         board[row][col].innerHTML = currentPlayer;
         checkPlayer();
         
@@ -144,7 +150,7 @@ function tie(){
     }
 }
 */
-
+/*
 // A function that returns true if any of the row 
 // is crossed with the same player's move 
 function rowCrossed() 
@@ -227,8 +233,8 @@ function tie(){
 }
 
 /*---
-/* checking for a draw'*/
-/*   function tie() {
+/*checking for a draw'*/
+ /* function tie() {
     for (var i = 0; i < size*size; i++) {
       // console.log(board[i]);
       row = math.floor(i/3);
@@ -241,4 +247,6 @@ function tie(){
       }
     }
     
-  } */
+  } 
+
+ */ 
