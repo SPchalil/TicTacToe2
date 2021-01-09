@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: rgb(2, 2, 2);
     display:flex;
@@ -19,9 +23,20 @@ body {
     flex-direction: column; 
 }
 
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: rgb(241, 21, 223);}
+    100% {color: green;}
+  }
+
 .heading{
     color: white;
     font-size: 30px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 25;
 }
 .status-action{
     color: white;
@@ -32,9 +47,7 @@ body {
     margin-top: 25px;
     width: 600px;
 }
-.status:hover{
-    background-color: grey;
-}
+
 .status1{
     
     justify-content: flex-start;
@@ -44,35 +57,30 @@ body {
 #status2{
     
     justify-content: flex-start;
-    font-size: 15px;
+    font-size: 25px;
+    color: rgb(255, 7, 7);
 }
 #restart{
     cursor: pointer;
     justify-content: flex-end;
-    font-size: 15px;
-    
+    font-size: 20px;
+    color: rgb(6, 243, 65);
 }
 #restart:hover{
-    background-color: rgb(7, 245, 106);
+    background-color: rgb(8, 8, 8);
 }
-
-
-/*.game-canvas{
-    text-align: center; 
-    
-}*/
 
 .game-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
     grid-gap: 15px;
     justify-content: center;
     align-items: center;
     padding: 50px 50px 50px 50px;
-    background-color: rgb(75, 73, 73);
+    background-color: rgb(4, 102, 248);
     text-align: center; 
-    
+ 
 }
 
 .game-cell{
@@ -80,45 +88,19 @@ body {
     cursor: pointer;
     height: 100px;
     width: 100px;
-    color: rgb(8, 8, 8);
+    
 }
 
 .playerX {
     background-image : url(images/cross.png);
     background-position: center;
     background-size: cover; 
-    width: 100%;
+    max-width: 100%;
 }
 .playerO {
     background-image : url(images/circle.png);
     background-position: center;
     background-size: cover; 
-    width: 100%;
+    max-width: 100%;
 }
 
-/*
-#game-cell0,#game-cell1,#game-cell2,#game-cell3,#game-cell4,#game-cell5,#game-cell6,#game-cell7,#game-cell8{
-    border : 2px solid white;
-    height: 100px;
-    width : 100px;
-    float: left;
-    cursor: pointer;
-    text-align: center;
-    font-size: 80px;
-    color: white;
-
-} 
-
-#game-cell0,#game-cell3,#game-cell6{
-    clear: left;
-    border-left: none;
-} 
-#game-cell0,#game-cell1,#game-cell2{
-    border-top: none;  
-}
-#game-cell2,#game-cell5,#game-cell8{
-    border-right: none;  
-}
-#game-cell6,#game-cell7,#game-cell8{
-    border-bottom: none;  
-}*/
