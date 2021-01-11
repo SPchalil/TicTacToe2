@@ -23,7 +23,7 @@ body {
     flex-direction: column; 
 }
 
-@keyframes example {
+@keyframes game {
     0%   {color: red;}
     25%  {color: yellow;}
     50%  {color: rgb(241, 21, 223);}
@@ -33,7 +33,7 @@ body {
 .heading{
     color: white;
     font-size: 30px;
-    animation-name: example;
+    animation-name: game;
     animation-duration: 4s;
     animation-delay: 2s;
     animation-iteration-count: 25;
@@ -58,7 +58,7 @@ body {
     
     justify-content: flex-start;
     font-size: 25px;
-    color: rgb(255, 7, 7);
+    color: rgb(255, 0, 0);
 }
 #restart{
     cursor: pointer;
@@ -96,11 +96,15 @@ body {
     background-position: center;
     background-size: cover; 
     max-width: 100%;
+    background-color: rgb(255, 47, 227);
+    
 }
 .playerO {
     background-image : url(images/circle.png);
     background-position: center;
     background-size: cover; 
     max-width: 100%;
+    background-color: yellow;
 }
+
 

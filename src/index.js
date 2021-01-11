@@ -46,13 +46,13 @@ if (cell=== 'playerX' || cell=== 'playerO'){
             console.log(board);
             //Winner
             if (winner()){
-            display.innerHTML = "Winner is " + currentPlayer +" ✌"; 
+            display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
             reset();   
             }
         
             else{
             currentPlayer = 'playerO';
-            display.innerHTML = "Next turn: " + currentPlayer;
+            display.innerHTML = `Next turn: ${currentPlayer}`;
             }
         
         }
@@ -62,13 +62,13 @@ if (cell=== 'playerX' || cell=== 'playerO'){
             console.log(board);
             
             if (winner()){
-                display.innerHTML = "Winner is " + currentPlayer +" ✌!"; 
+                display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
             reset();   
             }
 
             else{
                 currentPlayer = 'playerX';
-                display.innerHTML = "Next turn: " + currentPlayer;
+                display.innerHTML = `Next turn: ${currentPlayer}`;
             }
         }
         // Tie
