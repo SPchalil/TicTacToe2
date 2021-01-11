@@ -39,12 +39,12 @@ if (cell=== 'playerX' || cell=== 'playerO'){
 
     console.log(count);
     if (count<=9){
-        
+        //Check Player
         if (currentPlayer==='playerX'){
             cellDivs[location].classList.add('playerX')
             board[row][col] = "X";    
             console.log(board);
-            
+            //Winner
             if (winner()){
             display.innerHTML = "Winner is " + currentPlayer +" ✌"; 
             reset();   
@@ -71,6 +71,7 @@ if (cell=== 'playerX' || cell=== 'playerO'){
                 display.innerHTML = "Next turn: " + currentPlayer;
             }
         }
+        // Tie
         if(count === 9){
             display.innerText = "Match Draw !";
         }  
@@ -80,8 +81,7 @@ if (cell=== 'playerX' || cell=== 'playerO'){
     
     
 }
-
-    
+   
 /*------------------------Winning logic---------------------------------------------*/
 
 // A function that returns true if any of the row 
