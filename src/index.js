@@ -27,9 +27,9 @@ handleCellClick = (e) =>{
 const location = e.target.classList[1];
     //console.log(e);
     //console.log(location);
-var cell = e.target.classList[2];
-var row = Math.floor(location/3);
-var col = location % 3;
+const cell = e.target.classList[2];
+let row = Math.floor(location/3);
+let col = location % 3;
 
 if (cell=== 'playerX' || cell=== 'playerO'){
     return;
@@ -88,7 +88,7 @@ if (cell=== 'playerX' || cell=== 'playerO'){
 //is crossed with the same player's move 
 function rowCrossed() 
 { 
-	for (var i=0; i<3; i++) 
+	for (let i=0; i<3; i++) 
 	{ 
         
 		if (board[i][0] == board[i][1] && 
@@ -105,7 +105,7 @@ function rowCrossed()
 // is crossed with the same player's move 
 function columnCrossed() 
 { 
-	for (var i=0; i<3; i++) 
+	for (let i=0; i<3; i++) 
 	{ 
 		if (board[0][i] == board[1][i] && 
 			board[1][i] == board[2][i] && 
