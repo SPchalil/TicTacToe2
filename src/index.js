@@ -44,41 +44,57 @@ if (cell=== 'playerX' || cell=== 'playerO'){
             cellDivs[location].classList.add('playerX')
             board[row][col] = "X";    
             console.log(board);
-            //Winner
-            if (winner()){
-            display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
-            reset();   
-            }
+            if(count<9){
+            if (winner()){     //Winner
+                display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
+                reset();   
+                }
         
             else{
-            currentPlayer = 'playerO';
-            display.innerHTML = `Next turn: ${currentPlayer}`;
+                currentPlayer = 'playerO';  //Next Turn
+                display.innerHTML = `Next turn: ${currentPlayer}`;
+                }
             }
-        
+            else if (count ===9){
+                if (winner()){   //Winner
+                    display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
+                    reset();   
+                    }
+                else{
+                    display.innerText = "Match Draw !"; //Tie
+                }
+            }
         }
         else {
             cellDivs[location].classList.add('playerO')
             board[row][col] = "O"; 
             console.log(board);
-            
-            if (winner()){
+            if(count<9){
+            if (winner()){    //Winner
                 display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
-            reset();   
-            }
+                reset();   
+                }
 
             else{
-                currentPlayer = 'playerX';
+                currentPlayer = 'playerX';  //Next Turn
                 display.innerHTML = `Next turn: ${currentPlayer}`;
+                }
             }
-        }
-        // Tie
-        if(count === 9){
-            display.innerText = "Match Draw !";
-        }  
-        count++;
+            else if (count ===9){
+                if (winner()){   //Winner
+                    display.innerHTML = `Winner is ${currentPlayer} ✌!`; 
+                    reset();   
+                    }
+                else{
+                    display.innerText = "Match Draw !"; //Tie
+                }
+            }
         
-    }
+        
+        }
     
+    count++;
+    }
     
 }
    
