@@ -43,8 +43,8 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row; 
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 15px;
+    
     width: 600px;
 }
 
@@ -58,12 +58,12 @@ body {
     
     justify-content: flex-start;
     font-size: 25px;
-    color: rgb(255, 0, 0);
+    color: rgb(250, 39, 39);
 }
 #restart{
     cursor: pointer;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(6, 243, 65);
 }
 #restart:hover{
