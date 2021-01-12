@@ -150,7 +150,7 @@ function winner() {
 
 /*------------------------------------Reset/Restart Game-------------------------*/
 function reset(){
-    setTimeout(function(){location.reload();},3000);  
+    setTimeout(function(){location.reload();},1000);  
 }
 
 
