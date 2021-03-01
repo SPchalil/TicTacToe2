@@ -37,6 +37,9 @@ body {
     animation-duration: 4s;
     animation-delay: 2s;
     animation-iteration-count: 25;
+    margin-top: 20px;
+    height: 100px;
+
 }
 .status-action{
     color: white;
@@ -80,6 +83,7 @@ body {
     padding: 50px 50px 50px 50px;
     background-color: rgb(4, 102, 248);
     text-align: center; 
+    
  
 }
 
