@@ -6,6 +6,9 @@ This project is a second version of the Tic-Tac-Toe game developed as part of le
 The project makes use of the two dimensional array, that simplified the implemention of game logic. 
 Also, to make the game environment more attracting for kids to play, the game board is made more colourful using CSS styling.
 
+![tictactoe](https://user-images.githubusercontent.com/74065235/109541082-f099d680-7a9d-11eb-8ac7-9aec4e984bd3.png)
+
+
 ### How to run
 
 The website is hosted on Github Pages, https://spchalil.github.io/TicTacToe2/. You can also clone the repository and use LiveServer in VSCode to run index.html and check out an offline version on your local machine.
