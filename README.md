@@ -1,6 +1,6 @@
 # Game - TicTacToe
 
-A Tic-Tac-Toe game developed using pure HTML, CSS and Javascript.
+A Tic-Tac-Toe game developed using pure HTML, CSS and Javascript/ES6.
  
 This project is a second version of the Tic-Tac-Toe game developed as part of learning and practicing Javascript as well as implementing modern Javascript notations (ESX). 
 The project makes use of the two dimensional array, that simplified the implemention of game logic. 
