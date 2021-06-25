@@ -8,6 +8,8 @@ body {
     justify-content: center;
     text-align: center; 
     font-family: sans-serif;
+    background-image : url(images/BG.jpg);
+    background-size: cover; 
     
 }
  
@@ -30,8 +32,9 @@ body {
     100% {color: green;}
   }
 
+
 .heading{
-    color: white;
+    color: rgb(82, 167, 247);
     font-size: 30px;
     animation-name: game;
     animation-duration: 4s;
@@ -42,7 +45,7 @@ body {
 
 }
 .status-action{
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     flex-direction: row; 
@@ -55,6 +58,7 @@ body {
     
     justify-content: flex-start;
     font-size: 15px;
+    font-weight: bold;
 }
 
 #status2{
@@ -62,12 +66,14 @@ body {
     justify-content: flex-start;
     font-size: 25px;
     color: rgb(250, 39, 39);
+    font-weight: bold;
 }
 #restart{
     cursor: pointer;
     justify-content: flex-end;
     font-size: 25px;
     color: rgb(6, 243, 65);
+    font-weight: bold;
 }
 #restart:hover{
     background-color: rgb(8, 8, 8);
